@@ -1,10 +1,10 @@
 import logging
 import click
 
-from project.data.make_dataset import read_data
-from project.models.save_reports import save_predictions
-from project.models.model_data import load_model
-from project.params.predict_params import read_predict_params, PredictParams
+from ml_project.data.make_dataset import read_data
+from ml_project.models.save_reports import save_predictions
+from ml_project.models.model_data import load_model
+from ml_project.params.predict_params import read_predict_params, PredictParams
 
 
 logging.basicConfig(

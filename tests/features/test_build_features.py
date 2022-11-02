@@ -1,7 +1,7 @@
 import pandas as pd
 
-from project.params.feature_params import FeatureParams
-from project.features.build_features import extract_target
+from ml_project.params.feature_params import FeatureParams
+from ml_project.features.build_features import extract_target
 
 
 def test_extract_target(dataset: pd.DataFrame, feature_params: FeatureParams):

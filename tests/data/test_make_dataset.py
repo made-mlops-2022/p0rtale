@@ -1,7 +1,7 @@
 import pandas as pd
 
-from project.data import split_data
-from project.params import SplitParams
+from ml_project.data import split_data
+from ml_project.params import SplitParams
 
 
 def test_split_data(dataset: pd.DataFrame, split_params: SplitParams, target_col: str):

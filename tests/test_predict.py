@@ -1,7 +1,7 @@
 import os
 
-from project.predict import predict
-from project.params import PredictParams
+from ml_project.predict import predict
+from ml_project.params import PredictParams
 
 import pandas as pd
 

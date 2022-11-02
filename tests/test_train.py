@@ -1,7 +1,7 @@
 import os
 
-from project.train import train
-from project.params import TrainParams
+from ml_project.train import train
+from ml_project.params import TrainParams
 
 
 def test_train(train_params: TrainParams):

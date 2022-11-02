@@ -2,14 +2,14 @@ import logging
 import hydra
 from omegaconf import DictConfig
 
-from project.params import TrainParams, convert_to_train_params
-from project.data.make_dataset import read_data, split_data
-from project.features.build_features import build_transformer, extract_target
-from project.models.model_fit_predict import (
+from ml_project.params import TrainParams, convert_to_train_params
+from ml_project.data.make_dataset import read_data, split_data
+from ml_project.features.build_features import build_transformer, extract_target
+from ml_project.models.model_fit_predict import (
     create_pipeline, train_model, predict_model, evaluate
 )
-from project.models.model_data import serialize_model
-from project.models.save_reports import save_metrics
+from ml_project.models.model_data import serialize_model
+from ml_project.models.save_reports import save_metrics
 
 
 logger = logging.getLogger(__name__)

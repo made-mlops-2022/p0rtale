@@ -1,7 +1,7 @@
 import pytest
 import logging
 
-from project.params import (
+from ml_project.params import (
     FeatureParams,
     TrainParams,
     PredictParams,
@@ -9,9 +9,9 @@ from project.params import (
     LogisticRegressionParams
 )
 
-from project.data import generate_data
+from ml_project.data import generate_data
 
-from project.train import train
+from ml_project.train import train
 
 
 def pytest_addoption(parser):

@@ -13,7 +13,7 @@ from sklearn.metrics import (
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-from project.params import ModelParams
+from ml_project.params import ModelParams
 
 
 SklearnClassifierModel = Union[LogisticRegression, GaussianNB, KNeighborsClassifier]

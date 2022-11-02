@@ -6,7 +6,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 
-from project.params.feature_params import FeatureParams
+from ml_project.params.feature_params import FeatureParams
 
 
 def extract_target(data: pd.DataFrame, params: FeatureParams) -> pd.Series:

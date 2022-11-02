@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-from project.params.feature_params import FeatureParams
-from project.features.custom_standard_scaler import CustomStandardScaler
+from ml_project.params.feature_params import FeatureParams
+from ml_project.features.custom_standard_scaler import CustomStandardScaler
 
 
 def test_custom_standard_scaler(dataset: pd.DataFrame,
