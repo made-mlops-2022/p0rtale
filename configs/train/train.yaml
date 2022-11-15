@@ -1,0 +1,27 @@
+defaults:
+  - split: default
+  - model: logistic_regression
+  - _self_
+
+input_data_path: "data/raw/heart_cleveland_upload.csv"
+output_model_path: "models/model.pkl"
+metric_path: "models/metrics.json"
+
+features:
+  categorical_features:
+    - "sex"
+    - "cp"
+    - "fbs"
+    - "restecg"
+    - "exang"
+    - "slope"
+    - "ca"
+    - "thal"
+  numerical_features:
+    - "age"
+    - "trestbps"
+    - "chol"
+    - "thalach"
+    - "oldpeak"
+  features_to_drop: []
+  target_col: "condition"

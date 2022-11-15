@@ -1,0 +1,4 @@
+input_data_path: "data/raw/heart_cleveland_upload.csv"
+model_path: "models/model.pkl"
+output_predict_path: "models/predicts.csv"
+target_col: "condition"
