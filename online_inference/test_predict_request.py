@@ -23,6 +23,7 @@ def test_predict_ok():
         assert response.status_code == 200
         assert response.json() == [{"condition": 0}]
 
+
 def test_predict_wrong_value():
     with TestClient(app) as client:
         response = client.post("/predict", json={

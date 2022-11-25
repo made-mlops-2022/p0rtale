@@ -23,8 +23,10 @@ app = FastAPI()
 
 model: Optional[Pipeline] = None
 
+
 def is_model_ready():
     return model is not None
+
 
 app.add_api_route('/health', health(conditions=[is_model_ready]))
 
