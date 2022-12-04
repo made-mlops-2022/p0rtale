@@ -15,6 +15,6 @@ jobs:
       - name: Install dependencies
         run: pip3 install -r requirements.txt
       - name: Run flake8
-        run: flake8 . --max-line-length=90 --exclude venv/
+        run: flake8 . --max-line-length=120 --exclude venv/
       - name: Run tests
         run: python3 -m pytest tests

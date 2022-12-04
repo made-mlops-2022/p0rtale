@@ -18,6 +18,7 @@ from args import (
 def _wait_for_file(file_name):
     return os.path.exists(file_name)
 
+
 with DAG(
     "train_model",
     default_args=default_args,
@@ -74,7 +75,7 @@ with DAG(
     validate_model = DockerOperator(
         image="airflow-validate-model",
         command=f"--input-dir {SPLITTED_DATA_PATH} --model-dir {MODEL_PATH} --output-dir {MODEL_PATH}",
-        task_id="validate_model",
+        task_id="docker-airflow-validate-model",
         do_xcom_push=False,
         mount_tmp_dir=False,
         mounts=[Mount(source=LOCAL_DATA_PATH, target="/data", type="bind")]

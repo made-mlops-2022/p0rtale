@@ -19,6 +19,7 @@ from args import (
 def _wait_for_file(file_name):
     return os.path.exists(file_name)
 
+
 with DAG(
     "predict",
     default_args=default_args,
@@ -26,7 +27,7 @@ with DAG(
     start_date=days_ago(7),
 ) as dag:
     wait_data = PythonSensor(
-        task_id='wait-for-predict-data',
+        task_id='wait-for-data',
         python_callable=_wait_for_file,
         op_args=['/opt/airflow/data/raw/{{ ds }}/data.csv'],
         timeout=6000,
